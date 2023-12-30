@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+
+
+:root{
+  --primary-dark:rgb(125, 125, 251);
+  --primary-light:rgb(47, 47, 133);
+}
+@layer base{
+
+  html{    
+  @apply scroll-smooth
+  }
+  body{
+    @apply font-[Roboto] overflow-x-hidden
+  }
+  li{
+    @apply p-4 text-sm
+  }
+  button{
+    @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white
+  }
+  h2{
+    @apply font-bold text-xl
+  }
+}
